@@ -1,25 +1,25 @@
-name: Build and Test "TTS2" Component
+name: Run Test TTS2
 
-#define when to run this pipeline/workflow
-on: 
+on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
+
 jobs:
-  build_and_test:
-    name: Build the source code and run Python script # will displayed on github
+  run_tests:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout the code
-        uses: actions/checkout@v3          # use the latest version
-      - name: Install prerequisites
-        run: sudo apt-get install -y python3      # install to some cloud or virtual machines
-      - name: Install package
-        run: python -m pip install selenium
-      - name: build the code
-        run: echo "python testing ..."
-      - name: do the test
-        run: python test_TTS2.py
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Change directory to test script
+      run: cd E:\AutoTest TTS2\TTS2_test
+
+    - name: Run test_TTS2.py
+      run: python test_TTS2.py

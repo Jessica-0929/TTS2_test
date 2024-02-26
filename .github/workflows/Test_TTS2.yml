@@ -17,6 +17,8 @@ jobs:
         uses: actions/checkout@v3          # use the latest version
       - name: Install prerequisites
         run: sudo apt-get install -y python3      # install to some cloud or virtual machines
+      - name: Install package
+        run: python -m pip install selenium
       - name: build the code
         run: echo "python testing ..."
       - name: do the test

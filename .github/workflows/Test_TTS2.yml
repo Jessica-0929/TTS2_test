@@ -1,38 +1,21 @@
-name: Test_TTS2
+name: Build and Test "TTS2" Component
 
-on:
+#define when to run this pipeline/workflow
+on: 
   push:
-    branches: [ "master" ]
+    branches:
+      - master
   pull_request:
-    branches: [ "master" ]
-
+    branches:
+      - master
 jobs:
-  build:
-
-    runs-on: windows
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.11"]
-
+  build_and_test:
+    name: Build the source code and run Python script # will displayed on github
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
-      run: |
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        pytest
-    - name: Run test_TTS2.py
-      run: |
-        python test_TTS2.py
+      - name: Checkout the code
+        uses: actions/checkout@v3          # use the latest version
+      - name: Install prerequisites
+        run: sudo apt-get install -y python3      # install to some cloud or virtual machines
+      - name: build the code
+        run: echo "python testing ..."

@@ -11,7 +11,7 @@ on:
 jobs:
   build_and_test:
     name: Build the source code and run Python script # will displayed on github
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3          # use the latest version

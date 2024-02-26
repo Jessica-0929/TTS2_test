@@ -18,8 +18,5 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Change directory to test script
-      run: cd E:\AutoTest TTS2\TTS2_test
-
     - name: Run test_TTS2.py
-      run: python test_TTS2.py
+      run: python E:/AutoTest TTS2/TTS2_test/test_TTS2.py

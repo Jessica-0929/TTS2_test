@@ -19,3 +19,5 @@ jobs:
         run: sudo apt-get install -y python3      # install to some cloud or virtual machines
       - name: build the code
         run: echo "python testing ..."
+      - name: do the test
+        run: python test_TTS2.py

@@ -7,7 +7,7 @@ on:
 
 jobs:
   run_tests:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -19,4 +19,4 @@ jobs:
         python-version: '3.11'
 
     - name: Run test_TTS2.py
-      run: python E:/AutoTest TTS2/TTS2_test/test_TTS2.py
+      run: python E:\AutoTest TTS2\TTS2_test\test_TTS2.py

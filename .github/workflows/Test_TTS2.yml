@@ -19,4 +19,4 @@ jobs:
         python-version: '3.11'
 
     - name: Run test_TTS2.py
-      run: python "/E:/AutoTestTTS2/TTS2_test/test_TTS2.py"
+      run: python E:/AutoTestTTS2/TTS2_test/test_TTS2.py

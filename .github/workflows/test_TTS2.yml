@@ -1,0 +1,21 @@
+name: Build and Test "TTS2" Component
+
+#define when to run this pipeline/workflow
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build_and_test:
+    name: Build the source code and run Python script # will displayed on github
+    runs-on: windows-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3          # use the latest version
+      - name: build the code
+        run: echo "python testing ..."
+      - name: do the test
+        run: python test_TTS2.py

@@ -1,0 +1,31 @@
+2024-03-04 14:54:57,842 - INFO: test_connect_device passed
+2024-03-04 14:55:07,477 - INFO: test_read_device passed
+2024-03-04 14:59:27,991 - INFO: test_connect_device passed
+2024-03-04 14:59:37,128 - INFO: test_read_device passed
+2024-03-04 15:57:32,491 - INFO: test_connect_device passed
+2024-03-04 15:57:41,597 - INFO: test_read_device passed
+2024-03-04 16:13:13,271 - INFO: Could not connect to port 4723 on host 127.0.0.1
+2024-03-04 16:13:13,271 - INFO: Could not get IP address for host: 127.0.0.1
+2024-03-04 16:13:15,309 - WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A2AA3B9850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session
+2024-03-04 16:13:17,364 - WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A2AA3B9E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session
+2024-03-04 16:13:19,406 - WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A2AA3BBA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session
+2024-03-04 16:14:48,521 - INFO: test_connect_device passed
+2024-03-04 16:14:56,936 - INFO: test_read_device passed
+2024-03-04 16:18:34,332 - ERROR: Exception occurred during test_connect_device: Message: An element could not be located on the page using the given search parameters.
+
+2024-03-04 16:18:34,472 - ERROR: Exception occurred during test_read_device: Message: An element could not be located on the page using the given search parameters.
+
+2024-03-04 16:24:21,609 - INFO: test_connect_device passed
+2024-03-04 16:24:30,688 - INFO: test_read_device passed
+2024-03-05 11:23:20,906 - INFO: test_connect_device passed
+2024-03-05 11:23:29,648 - INFO: test_read_device passed
+2024-03-07 10:24:47,888 - INFO: test_connect_device passed
+2024-03-07 10:24:57,008 - INFO: test_read_device passed
+2024-03-12 10:41:25,816 - INFO: test_connect_device passed
+2024-03-12 10:41:34,910 - INFO: test_read_device passed
+2024-03-12 11:06:56,836 - INFO: test_connect_device passed
+2024-03-12 11:07:05,947 - INFO: test_read_device passed
+2024-03-12 11:09:16,415 - INFO: test_connect_device passed
+2024-03-12 11:09:25,864 - INFO: test_read_device passed
+2024-03-12 11:18:29,302 - INFO: test_connect_device passed
+2024-03-12 11:18:38,092 - INFO: test_read_device passed

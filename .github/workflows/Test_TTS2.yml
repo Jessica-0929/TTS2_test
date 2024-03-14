@@ -1,0 +1,22 @@
+name: Run Test TTS2
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run_tests:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Run test_TTS2.py
+      run: python E:/AutoTestTTS2/TTS2_test/test_TTS2.py
